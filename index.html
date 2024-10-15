@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="name">People entered:</h1>
+    <p id="save-el">Previous entries are:</p>
+    <h2 id="count-el">0</h2>
+    <h1 id="welcomEl">Welcome User</h1>
+    <form id="userForm">
+        <ul>
+            <li><input type="text" id="firstName" placeholder="First Name" /></li>
+            <li><input type="text" id="lastName" placeholder="Last Name" /></li>
+        </ul>
+        <button type="button" id="submit-btn" onclick="display()">
+            Display Name
+        </button>
+    </form>
+    
+    <button id="increment-btn" onclick="increment()">Increment</button>
+    <button id="decrement-btn" onclick="decrement()">Decrement</button>
+    <button id="save-btn" onclick="save()">Save</button>
+
+    <div id="output"></div>
+    <script src="index.js"></script>
+</body>
+</html>
